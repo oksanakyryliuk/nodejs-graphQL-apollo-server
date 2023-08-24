@@ -14,9 +14,8 @@ input RecipeInput{
     description: String
 }
 
-
 type Query{
-    recipe(ID: ID)!: Recipe!
+    recipe(ID: ID!): Recipe!
     getRecipes(amount: Int): [Recipe]
 }
 

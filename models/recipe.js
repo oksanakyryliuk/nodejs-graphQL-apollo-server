@@ -1,12 +1,11 @@
-const {model, Shema}=require('mongoose');
+const {model, Schema}=require('mongoose');
 
-const recipeShema=new Shema({
+const recipeSchema = new Schema({
 name: String,
 description: String,
 createAt: String,
 trumbsUp: Number,
 trumbsDown: Number
-
 })
 
-module.exports=model('Recipe', recipeShema)
+module.exports=model('Recipe', recipeSchema)
