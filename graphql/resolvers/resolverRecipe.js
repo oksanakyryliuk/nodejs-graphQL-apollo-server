@@ -1,6 +1,6 @@
 const Recipe = require('../models/recipe')
 
-const resolvers= {
+const resolversRecipe= {
     Query: {
         async recipe(_, { ID }) {
             return await Recipe.findById(ID)
@@ -39,4 +39,4 @@ const resolvers= {
 
 
 }
-module.exports=resolvers
+module.exports=resolversRecipe

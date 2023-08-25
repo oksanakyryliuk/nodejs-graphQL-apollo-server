@@ -1,6 +1,6 @@
 const {gql}=require('apollo-server')
 
-const typeDefs=gql`
+const typeDefsRecipe=gql`
 type Recipe{
     name: String,
 description: String,
@@ -26,4 +26,4 @@ type Mutation{
 
 }
 `
-module.exports = typeDefs;
+module.exports = typeDefsRecipe;

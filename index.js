@@ -4,11 +4,11 @@ const mongoose = require('mongoose')
 const MONGODB = "mongodb://localhost:27017/graph"
 
 //Apollo 
-const typeDefs = require('./graphql/typeDefs')
-const resolvers = require('./graphql/resolvers')
+const typeDefsRecipe = require('./graphql/typeDefs/typeDefsRecipe')
+const resolvers = require('./graphql/resolvers/app-main-resolvers')
 
 const server = new ApolloServer({
-    typeDefs,
+    typeDefs: [typeDefsRecipe],
     resolvers
 })
 
